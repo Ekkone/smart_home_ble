@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+			"name": "Linux",
+			"browse": {
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+					"${workspaceFolder}"
+				]
+			},
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/BSP/",
+                "${workspaceFolder}/config/",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/boards",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/drivers_nrf/nrf_soc_nosd",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/atomic",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/balloc",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/bsp",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/button",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/delay",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/memobj",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/ringbuf",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/log",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/log/src",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/scheduler",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/streeor",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/timer",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/util",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/libraries/uart",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/proprietary_rf/gzll",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/components/toolchain/cmsis/include",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/external/fprintf",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/external/segger_rtt",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/integration/nrfx",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/integration/nrfx/legacy",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/include",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/src/prs",
+                "/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk",
+				"/home/ekko/study/project/nrf/nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal/"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+			"cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
