@@ -1,4 +1,4 @@
-PROJECT_NAME     := ble_app_blinky_c_pca10040_s132
+PROJECT_NAME     := ble_app_multilink_central_pca10040_s132
 TARGETS          := nrf52832_xxaa
 OUTPUT_DIRECTORY := _build
 
@@ -6,7 +6,7 @@ SDK_ROOT := ../../../nRF5_SDK_15.3.0_59ac345
 PROJ_DIR := ..
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
-  LINKER_SCRIPT  := ble_app_blinky_c_gcc_nrf52.ld
+  LINKER_SCRIPT  := ble_app_multilink_central_gcc_nrf52.ld
 
 # Source files common to all targets
 SRC_FILES += \
@@ -54,7 +54,6 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_uarte.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp_btn_ble.c \
-  $(PROJ_DIR)/main.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c \
   $(SDK_ROOT)/external/segger_rtt/SEGGER_RTT_printf.c \
@@ -74,7 +73,6 @@ SRC_FILES += \
 # Include folders common to all targets
 INC_FOLDERS += \
 	$(PROJ_DIR)/BSP/ \
-	$(PROJ_DIR) \
   $(SDK_ROOT)/components/nfc/ndef/generic/message \
   $(SDK_ROOT)/components/nfc/t2t_lib \
   $(SDK_ROOT)/components/nfc/t4t_parser/hl_detection_procedure \
@@ -228,7 +226,7 @@ CFLAGS += -DSOFTDEVICE_PRESENT
 CFLAGS += -DSWI_DISABLE0
 CFLAGS += -mcpu=cortex-m4
 CFLAGS += -mthumb -mabi=aapcs
-CFLAGS += -Wall -Werror
+CFLAGS += -Wall #-Werror
 CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 # keep every function in a separate section, this allows linker to discard unused ones
 CFLAGS += -ffunction-sections -fdata-sections -fno-strict-aliasing
