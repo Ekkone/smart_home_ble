@@ -24,7 +24,7 @@ flag_5 = 0
 flag_6 = 0
 flag_7 = 0
 flag_8 = 0
-while True:
+while ser.isOpen():
 	data = ser.readlines()
 	screen = curses.initscr()
 	
@@ -54,27 +54,10 @@ while True:
 		screen.addstr(7,15,"开启")
 	screen.addstr(10,2,"按下对应编号控制：")
 	screen.refresh()
-
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
-	time.sleep(1)
-	ser.write(0xaa)
-	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	
+	mm = (flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8)
+	ss = bytearray([255,mm])
+	ser.write(ss)
 	x = screen.getch()
 
 	if x == ord('1'):

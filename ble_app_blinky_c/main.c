@@ -101,18 +101,25 @@ void uart_write(uint8_t *pdata,uint8_t length)
 }
 static uint8_t flags = 0;
 
-uint8_t date_array[10] = {0};
+
 void uart_event_handle(app_uart_evt_t * p_event)
 {
 
+static uint8_t date_array[256] = {0};
+static uint16_t index = 0;
 	switch (p_event->evt_type)
 	{
 	case APP_UART_DATA_READY:
-		UNUSED_VARIABLE(app_uart_get(date_array));
-		if(date_array[0] == 0xaa)
-			flags = date_array[1]>>7;
-		
-			
+		UNUSED_VARIABLE(app_uart_get(&date_array[index]));
+		index++;
+		if(index > 1 && date_array[index-2] == 0xff)
+		{
+			NRF_LOG_INFO("data_array:     %x",date_array[index-1]);
+			flags = date_array[index-1];
+			index = 0;
+		}
+		else if(index > 200)
+			index = 0;
 		/* code */
 		break;
 	case APP_UART_COMMUNICATION_ERROR:
@@ -564,9 +571,9 @@ static void power_management_init(void)
  */
 static void idle_state_handle(void)
 {
-	for (uint32_t i = 0; i< NRF_SDH_BLE_CENTRAL_LINK_COUNT; i++)
+			for (uint32_t i = 0; i< NRF_SDH_BLE_CENTRAL_LINK_COUNT; i++)
 			{
-				ble_lbs_led_status_send(&m_lbs_c[i],flags);
+				 ble_lbs_led_status_send(&m_lbs_c[i], (flags >> 7)&1);
 			}
     if (NRF_LOG_PROCESS() == false)
     {
