@@ -4,7 +4,7 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/external/segger_rtt/SEGGER_RTT_Conf.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util_platform.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
@@ -36,8 +36,8 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/sys/_types.h \
@@ -47,7 +47,7 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h \
@@ -63,7 +63,7 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util_platform.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -129,9 +129,9 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 /usr/arm-none-eabi/include/sys/reent.h:
 
@@ -151,7 +151,7 @@ _build/nrf52832_xxaa/SEGGER_RTT.c.o: \
 
 /usr/arm-none-eabi/include/sys/stdio.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h:
 

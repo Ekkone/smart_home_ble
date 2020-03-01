@@ -275,14 +275,47 @@ static void nrf_qwr_error_handler(uint32_t nrf_error)
  */
 static void led_write_handler(uint16_t conn_handle, ble_lbs_t * p_lbs, uint8_t led_state)
 {
-    if (led_state)
+    if ((led_state >> 0)&1)
     {
-        bsp_board_led_on(LEDBUTTON_LED);
+        bsp_board_led_on(BSP_BOARD_LED_0);
         NRF_LOG_INFO("Received LED ON!");
     }
     else
     {
-        bsp_board_led_off(LEDBUTTON_LED);
+        bsp_board_led_off(BSP_BOARD_LED_0);
+        NRF_LOG_INFO("Received LED OFF!");
+    }
+
+	if ((led_state >> 1)&1)
+    {
+        bsp_board_led_on(BSP_BOARD_LED_1);
+        NRF_LOG_INFO("Received LED ON!");
+    }
+    else
+    {
+        bsp_board_led_off(BSP_BOARD_LED_1);
+        NRF_LOG_INFO("Received LED OFF!");
+    }
+
+	if ((led_state >> 2)&1)
+    {
+        bsp_board_led_on(BSP_BOARD_LED_2);
+        NRF_LOG_INFO("Received LED ON!");
+    }
+    else
+    {
+        bsp_board_led_off(BSP_BOARD_LED_2);
+        NRF_LOG_INFO("Received LED OFF!");
+    }
+
+	if ((led_state >> 3)&1)
+    {
+        bsp_board_led_on(BSP_BOARD_LED_3);
+        NRF_LOG_INFO("Received LED ON!");
+    }
+    else
+    {
+        bsp_board_led_off(BSP_BOARD_LED_3);
         NRF_LOG_INFO("Received LED OFF!");
     }
 }
@@ -375,7 +408,7 @@ static void advertising_start(void)
     err_code = sd_ble_gap_adv_start(m_adv_handle, APP_BLE_CONN_CFG_TAG);
     APP_ERROR_CHECK(err_code);
 
-    bsp_board_led_on(ADVERTISING_LED);
+    // bsp_board_led_on(ADVERTISING_LED);
 }
 
 
@@ -392,8 +425,8 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     {
         case BLE_GAP_EVT_CONNECTED:
             NRF_LOG_INFO("Connected");
-            bsp_board_led_on(CONNECTED_LED);
-            bsp_board_led_off(ADVERTISING_LED);
+            // bsp_board_led_on(CONNECTED_LED);
+            // bsp_board_led_off(ADVERTISING_LED);
             m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
             err_code = nrf_ble_qwr_conn_handle_assign(&m_qwr, m_conn_handle);
             APP_ERROR_CHECK(err_code);
@@ -403,7 +436,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
         case BLE_GAP_EVT_DISCONNECTED:
             NRF_LOG_INFO("Disconnected");
-            bsp_board_led_off(CONNECTED_LED);
+            // bsp_board_led_off(CONNECTED_LED);
             m_conn_handle = BLE_CONN_HANDLE_INVALID;
             err_code = app_button_disable();
             APP_ERROR_CHECK(err_code);

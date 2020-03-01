@@ -573,7 +573,7 @@ static void idle_state_handle(void)
 {
 			for (uint32_t i = 0; i< NRF_SDH_BLE_CENTRAL_LINK_COUNT; i++)
 			{
-				 ble_lbs_led_status_send(&m_lbs_c[i], (flags >> 7)&1);
+				 ble_lbs_led_status_send(&m_lbs_c[i], (flags >> 4)&0xf);
 			}
     if (NRF_LOG_PROCESS() == false)
     {

@@ -1,21 +1,21 @@
 _build/nrf52832_xxaa/nrf_fprintf.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/external/fprintf/nrf_fprintf.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  /usr/arm-none-eabi/include/string.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
  /usr/arm-none-eabi/include/sys/_types.h \
  /usr/arm-none-eabi/include/machine/_types.h \
  /usr/arm-none-eabi/include/sys/lock.h \
@@ -43,14 +43,14 @@ _build/nrf52832_xxaa/nrf_fprintf.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_macros.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h \
  ../../../nRF5_SDK_15.3.0_59ac345/external/fprintf/nrf_fprintf_format.h \
  ../../../nRF5_SDK_15.3.0_59ac345/external/fprintf/nrf_fprintf.h
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -64,7 +64,7 @@ _build/nrf52832_xxaa/nrf_fprintf.c.o: \
 
 /usr/arm-none-eabi/include/sys/_stdint.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 /usr/arm-none-eabi/include/string.h:
 
@@ -80,7 +80,7 @@ _build/nrf52832_xxaa/nrf_fprintf.c.o: \
 
 /usr/arm-none-eabi/include/_ansi.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
 /usr/arm-none-eabi/include/sys/_types.h:
 
@@ -138,7 +138,7 @@ _build/nrf52832_xxaa/nrf_fprintf.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h:
 
