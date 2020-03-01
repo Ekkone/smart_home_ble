@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/main.c.o: ../main.c \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
@@ -11,8 +11,8 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/sys/_types.h \
@@ -26,7 +26,7 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
  /usr/arm-none-eabi/include/sys/string.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  ../config/sdk_config.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error.h \
@@ -128,9 +128,11 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
  /usr/arm-none-eabi/include/stdlib.h \
  /usr/arm-none-eabi/include/machine/stdlib.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/balloc/nrf_balloc.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_default_backends.h
+ ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_default_backends.h \
+ ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal/nrf_uart.h \
+ ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/uart/app_uart.h
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -156,9 +158,9 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 /usr/arm-none-eabi/include/sys/reent.h:
 
@@ -186,7 +188,7 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 ../config/sdk_config.h:
 
@@ -391,3 +393,7 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/balloc/nrf_balloc.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_default_backends.h:
+
+../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal/nrf_uart.h:
+
+../../../nRF5_SDK_15.3.0_59ac345/components/libraries/uart/app_uart.h:

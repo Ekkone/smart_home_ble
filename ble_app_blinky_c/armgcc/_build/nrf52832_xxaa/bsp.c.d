@@ -1,21 +1,21 @@
 _build/nrf52832_xxaa/bsp.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/bsp/bsp.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/bsp/bsp.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/boards/boards.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal/nrf_gpio.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/nrfx.h \
  ../../../nRF5_SDK_15.3.0_59ac345/integration/nrfx/nrfx_config.h \
  ../config/sdk_config.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/nrfx_common.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf52.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/toolchain/cmsis/include/core_cm4.h \
@@ -54,7 +54,7 @@ _build/nrf52832_xxaa/bsp.c.o: \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/sys/_types.h \
@@ -81,7 +81,7 @@ _build/nrf52832_xxaa/bsp.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/bsp/bsp.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -95,7 +95,7 @@ _build/nrf52832_xxaa/bsp.c.o: \
 
 /usr/arm-none-eabi/include/sys/_stdint.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/boards/boards.h:
 
@@ -109,7 +109,7 @@ _build/nrf52832_xxaa/bsp.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/nrfx_common.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf.h:
 
@@ -189,7 +189,7 @@ _build/nrf52832_xxaa/bsp.c.o: \
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 /usr/arm-none-eabi/include/sys/reent.h:
 

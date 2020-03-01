@@ -1,5 +1,5 @@
-_build/nrf52832_xxaa/nrf_sdh_soc.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh_soc.c \
+_build/nrf52832_xxaa/app_fifo.c.o: \
+ ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/fifo/app_fifo.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
@@ -43,33 +43,9 @@ _build/nrf52832_xxaa/nrf_sdh_soc.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_macros.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh_soc.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section_iter.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_soc.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error_soc.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h \
- /usr/arm-none-eabi/include/stdio.h \
- /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
- /usr/arm-none-eabi/include/sys/types.h \
- /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
- /usr/arm-none-eabi/include/machine/types.h \
- /usr/arm-none-eabi/include/sys/stdio.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error_weak.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/strerror/nrf_strerror.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/src/nrf_log_internal.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_instance.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_types.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_types.h
+ ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/fifo/app_fifo.h \
+ /usr/arm-none-eabi/include/stdlib.h \
+ /usr/arm-none-eabi/include/machine/stdlib.h
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h:
 
@@ -161,56 +137,8 @@ _build/nrf52832_xxaa/nrf_sdh_soc.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h:
 
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh_soc.h:
+../../../nRF5_SDK_15.3.0_59ac345/components/libraries/fifo/app_fifo.h:
 
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section_iter.h:
+/usr/arm-none-eabi/include/stdlib.h:
 
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_soc.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error_soc.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/common/nrf_sdh.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h:
-
-/usr/arm-none-eabi/include/stdio.h:
-
-/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
-
-/usr/arm-none-eabi/include/sys/types.h:
-
-/usr/arm-none-eabi/include/sys/_pthreadtypes.h:
-
-/usr/arm-none-eabi/include/machine/types.h:
-
-/usr/arm-none-eabi/include/sys/stdio.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error_weak.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/experimental_section_vars/nrf_section.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/strerror/nrf_strerror.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/src/nrf_log_internal.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_instance.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_types.h:
-
-../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/nrf_log_types.h:
+/usr/arm-none-eabi/include/machine/stdlib.h:

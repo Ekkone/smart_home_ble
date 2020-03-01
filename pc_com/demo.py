@@ -16,14 +16,14 @@ while os.path.exists("/dev/ttyUSB0") == False:
 	time.sleep(1)
 #设备已连接
 ser = serial.Serial("/dev/ttyUSB0",115200,timeout=0.5)
-flag_1 = False
-flag_2 = False
-flag_3 = False
-flag_4 = False
-flag_5 = False
-flag_6 = False
-flag_7 = False
-flag_8 = False
+flag_1 = 0
+flag_2 = 0
+flag_3 = 0
+flag_4 = 0
+flag_5 = 0
+flag_6 = 0
+flag_7 = 0
+flag_8 = 0
 while True:
 	data = ser.readlines()
 	screen = curses.initscr()
@@ -47,7 +47,7 @@ while True:
 		screen.addstr(6,15,"关闭")
 	else:
 		screen.addstr(6,15,"开启")
-	screen.addstr(7, 2, "3 - 卫生间灯")
+	screen.addstr(7, 2, "4 - 卫生间灯")
 	if flag_4 ==False:
 		screen.addstr(7,15,"关闭")
 	else:
@@ -55,20 +55,48 @@ while True:
 	screen.addstr(10,2,"按下对应编号控制：")
 	screen.refresh()
 
-	tx =  (0xf00 | flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8) & 0xfff
-	ser.write(tx)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
 	time.sleep(1)
-	ser.write(tx)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	time.sleep(1)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	time.sleep(1)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	time.sleep(1)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	time.sleep(1)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
+	time.sleep(1)
+	ser.write(0xaa)
+	ser.write((flag_1 <<7 | flag_2 << 6 | flag_3 << 5 | flag_4 << 4 | flag_5 << 3 | flag_6 << 2 | flag_7 << 1 |flag_8))
 	x = screen.getch()
 
 	if x == ord('1'):
-		flag_1 = ~flag_1
+		if flag_1 == 0:
+			flag_1 = 1
+		else :
+			flag_1 = 0
 	elif x == ord('2'):
-		flag_2 = ~flag_2	
+		if flag_2 == 0:
+			flag_2 = 1
+		else :
+			flag_2 = 0	
 	elif x == ord('3'):
-		flag_3 = ~flag_3
+		if flag_3 == 0:
+			flag_3 = 1
+		else :
+			flag_3 = 0
 	elif x == ord('4'):
-		flag_4 = ~flag_4
+		if flag_4 == 0:
+			flag_4 = 1
+		else :
+			flag_4 = 0
 	elif x == ord('5'):
 		flag_5 = ~flag_5
 	elif x == ord('6'):

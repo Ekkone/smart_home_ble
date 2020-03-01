@@ -1,7 +1,7 @@
 _build/nrf52832_xxaa/app_error_weak.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error_weak.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
@@ -13,8 +13,8 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/cdefs.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/sys/_types.h \
@@ -24,7 +24,7 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/machine/types.h \
  /usr/arm-none-eabi/include/sys/stdio.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf.h \
  ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf52.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/toolchain/cmsis/include/core_cm4.h \
@@ -81,7 +81,7 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -107,9 +107,9 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
 
 /usr/arm-none-eabi/include/sys/cdefs.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 /usr/arm-none-eabi/include/sys/reent.h:
 
@@ -129,7 +129,7 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
 
 /usr/arm-none-eabi/include/sys/stdio.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/modules/nrfx/mdk/nrf.h:
 

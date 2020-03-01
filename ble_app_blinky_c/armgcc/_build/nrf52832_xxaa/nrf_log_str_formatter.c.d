@@ -1,21 +1,21 @@
 _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/log/src/nrf_log_str_formatter.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \
  /usr/arm-none-eabi/include/_newlib_version.h \
  /usr/arm-none-eabi/include/sys/_intsup.h \
  /usr/arm-none-eabi/include/sys/_stdint.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  /usr/arm-none-eabi/include/string.h /usr/arm-none-eabi/include/_ansi.h \
  /usr/arm-none-eabi/include/newlib.h \
  /usr/arm-none-eabi/include/sys/config.h \
  /usr/arm-none-eabi/include/machine/ieeefp.h \
  /usr/arm-none-eabi/include/sys/reent.h \
  /usr/arm-none-eabi/include/_ansi.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
  /usr/arm-none-eabi/include/sys/_types.h \
  /usr/arm-none-eabi/include/machine/_types.h \
  /usr/arm-none-eabi/include/sys/lock.h \
@@ -62,7 +62,7 @@ _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_nvic.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h \
  /usr/arm-none-eabi/include/stdio.h \
- /usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
  /usr/arm-none-eabi/include/sys/types.h \
  /usr/arm-none-eabi/include/sys/_pthreadtypes.h \
  /usr/arm-none-eabi/include/machine/types.h \
@@ -79,7 +79,7 @@ _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdint.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h:
 
 /usr/arm-none-eabi/include/stdint.h:
 
@@ -93,7 +93,7 @@ _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
 
 /usr/arm-none-eabi/include/sys/_stdint.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdbool.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
 /usr/arm-none-eabi/include/string.h:
 
@@ -109,7 +109,7 @@ _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
 
 /usr/arm-none-eabi/include/_ansi.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stddef.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h:
 
 /usr/arm-none-eabi/include/sys/_types.h:
 
@@ -205,7 +205,7 @@ _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
 
 /usr/arm-none-eabi/include/stdio.h:
 
-/usr/lib/gcc/arm-none-eabi/9.2.0/include/stdarg.h:
+/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h:
 
 /usr/arm-none-eabi/include/sys/types.h:
 

@@ -12,7 +12,8 @@
 			"type": "cortex-debug",
 			"device": "nRF52832_xxAA",
 			"servertype": "jlink",
-			"interface": "swd"
+			"interface": "swd",
+			"runToMain": true,
         }
     ]
 }

@@ -68,6 +68,11 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+#include "nrf_uart.h"
+#include "app_uart.h"
+
+#define UART_TX_BUF_SIZE        256                                     /**< UART TX buffer size. */
+#define UART_RX_BUF_SIZE        256                                     /**< UART RX buffer size. */
 
 #define APP_BLE_CONN_CFG_TAG      1                                     /**< Tag that refers to the BLE stack configuration that is set with @ref sd_ble_cfg_set. The default tag is @ref APP_BLE_CONN_CFG_TAG. */
 #define APP_BLE_OBSERVER_PRIO     3                                     /**< BLE observer priority of the application. There is no need to modify this value. */
@@ -86,7 +91,65 @@ NRF_BLE_SCAN_DEF(m_scan);                                               /**< Sca
 
 static char const m_target_periph_name[] = "Nordic_Blinky";             /**< Name of the device to try to connect to. This name is searched for in the scanning report data. */
 
+void uart_write(uint8_t *pdata,uint8_t length)
+{
+	int i;
+	for (i = 0; i < length; i++)
+	{
+		UNUSED_VARIABLE(app_uart_put(*pdata++));
+	}
+}
+static uint8_t flags = 0;
 
+uint8_t date_array[10] = {0};
+void uart_event_handle(app_uart_evt_t * p_event)
+{
+
+	switch (p_event->evt_type)
+	{
+	case APP_UART_DATA_READY:
+		UNUSED_VARIABLE(app_uart_get(date_array));
+		if(date_array[0] == 0xaa)
+			flags = date_array[1]>>7;
+		
+			
+		/* code */
+		break;
+	case APP_UART_COMMUNICATION_ERROR:
+		APP_ERROR_HANDLER(p_event->data.error_communication);
+		break;
+	case APP_UART_FIFO_ERROR:
+		APP_ERROR_HANDLER(p_event->data.error_code);
+		break;
+	default:
+		break;
+	}
+}
+
+void uart_init(void)
+{
+    ret_code_t err_code;
+
+    app_uart_comm_params_t const comm_params =
+    {
+        .rx_pin_no    = RX_PIN_NUMBER,
+        .tx_pin_no    = TX_PIN_NUMBER,
+        .rts_pin_no   = RTS_PIN_NUMBER,
+        .cts_pin_no   = CTS_PIN_NUMBER,
+        .flow_control = APP_UART_FLOW_CONTROL_DISABLED,
+        .use_parity   = false,
+        .baud_rate    = UART_BAUDRATE_BAUDRATE_Baud115200
+    };
+
+    APP_UART_FIFO_INIT(&comm_params,
+                       UART_RX_BUF_SIZE,
+                       UART_TX_BUF_SIZE,
+                       uart_event_handle,
+                       APP_IRQ_PRIORITY_LOWEST,
+                       err_code);
+
+    APP_ERROR_CHECK(err_code);
+}
 /**@brief Function for handling asserts in the SoftDevice.
  *
  * @details This function is called in case of an assert in the SoftDevice.
@@ -403,7 +466,7 @@ static ret_code_t led_status_send_to_all(uint8_t button_action)
 
     for (uint32_t i = 0; i< NRF_SDH_BLE_CENTRAL_LINK_COUNT; i++)
     {
-        err_code = ble_lbs_led_status_send(&m_lbs_c[i], button_action);
+        // err_code = ble_lbs_led_status_send(&m_lbs_c[i], button_action);
         if (err_code != NRF_SUCCESS &&
             err_code != BLE_ERROR_INVALID_CONN_HANDLE &&
             err_code != NRF_ERROR_INVALID_STATE)
@@ -501,6 +564,10 @@ static void power_management_init(void)
  */
 static void idle_state_handle(void)
 {
+	for (uint32_t i = 0; i< NRF_SDH_BLE_CENTRAL_LINK_COUNT; i++)
+			{
+				ble_lbs_led_status_send(&m_lbs_c[i],flags);
+			}
     if (NRF_LOG_PROCESS() == false)
     {
         nrf_pwr_mgmt_run();
@@ -542,6 +609,7 @@ int main(void)
     // Initialize.
     log_init();
     timer_init();
+	uart_init();
     leds_init();
     buttons_init();
     power_management_init();
