@@ -104,7 +104,7 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
  ../custom_board.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/timer/app_timer.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/button/app_button.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/ble/ble_services/ble_lbs/ble_lbs.h \
+ ../Services/ble_lbs.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/ble/nrf_ble_gatt/nrf_ble_gatt.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/ble/nrf_ble_qwr/nrf_ble_qwr.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/pwr_mgmt/nrf_pwr_mgmt.h \
@@ -343,7 +343,7 @@ _build/nrf52832_xxaa/main.c.o: ../main.c \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/button/app_button.h:
 
-../../../nRF5_SDK_15.3.0_59ac345/components/ble/ble_services/ble_lbs/ble_lbs.h:
+../Services/ble_lbs.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/ble/nrf_ble_gatt/nrf_ble_gatt.h:
 

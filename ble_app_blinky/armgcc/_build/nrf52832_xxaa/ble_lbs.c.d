@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/ble_lbs.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345/components/ble/ble_services/ble_lbs/ble_lbs.c \
+_build/nrf52832_xxaa/ble_lbs.c.o: ../Services/ble_lbs.c \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
@@ -43,7 +42,7 @@ _build/nrf52832_xxaa/ble_lbs.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_macros.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h \
- ../../../nRF5_SDK_15.3.0_59ac345/components/ble/ble_services/ble_lbs/ble_lbs.h \
+ ../Services/ble_lbs.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/ble.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_svc.h \
  ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/nrf_error.h \
@@ -158,7 +157,7 @@ _build/nrf52832_xxaa/ble_lbs.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/libraries/util/nrf_assert.h:
 
-../../../nRF5_SDK_15.3.0_59ac345/components/ble/ble_services/ble_lbs/ble_lbs.h:
+../Services/ble_lbs.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345/components/softdevice/s132/headers/ble.h:
 

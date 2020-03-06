@@ -616,6 +616,11 @@ int main(void)
     advertising_init();
     conn_params_init();
 
+	LCD_Init();
+
+	LCD_P8x16Str(0,0,"Aid-conditioning");
+	LCD_P8x16Str(0,2,"Temp:");
+	LCD_P8x16Str(45,4,"23C");
     // Start execution.
     NRF_LOG_INFO("Blinky example started.");
     advertising_start();
